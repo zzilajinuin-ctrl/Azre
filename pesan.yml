@@ -1,0 +1,45 @@
+name: Kirim pesan komunitas
+description: Tulis pesan dan tampilkan profil simbolikmu di Ruang Pesan.
+title: "Pesan baru"
+labels: ["pesan-komunitas"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pesan ini akan tampil secara publik di website. Jangan tulis informasi pribadi atau rahasia.
+  - type: dropdown
+    id: symbol
+    attributes:
+      label: Simbol profil
+      description: Pilih simbol yang mewakilimu.
+      options:
+        - ✦
+        - ☾
+        - ❖
+        - ♜
+        - ◇
+        - ⚝
+        - ☼
+        - ♧
+        - ✧
+        - ☘
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Deskripsi singkat
+      description: Maksimal satu kalimat tentang dirimu.
+      placeholder: Pengamat yang suka berbagi cerita
+    validations:
+      required: false
+      maxlength: 100
+  - type: textarea
+    id: message
+    attributes:
+      label: Pesan
+      description: Tulis pesanmu di sini.
+      placeholder: Halo semuanya...
+    validations:
+      required: true
+      maxlength: 2000
