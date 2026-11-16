@@ -1,7 +1,6 @@
-// Ganti dua nilai ini sesuai repositori GitHub kamu.
-const GITHUB_OWNER = "zzilajinuin";
-const REPO_NAME = "ruang-pesan";
-const LABEL = "pesan-komunitas";
+const GITHUB_OWNER = "zzilajinuin-ctrl";
+const REPO_NAME = "Azre";
+const LABEL = "Aasixin_AJA 😜";
 const SYMBOLS = ["✦", "☾", "❖", "♜", "◇", "⚝", "☼", "♧", "✧", "☘"];
 const $ = id => document.getElementById(id);
 const repo = `https://github.com/${GITHUB_OWNER}/${REPO_NAME}`;
